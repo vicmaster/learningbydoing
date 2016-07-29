@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  host: 127.0.0.1
+  encoding: utf8
+
+development:
+  <<: *default
+  database: learn_dev
+
+test:
+  <<: *default
+  database: learn_test
