@@ -5,7 +5,7 @@
  
 <p>
   <strong>Blurb:</strong>
-  <%= @book.blurb %>
+  <%= @book.blurb.truncate(10) %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
