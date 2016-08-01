@@ -1,4 +1,4 @@
-class AuthorController < ApplicationController
+class AuthorsController < ApplicationController
   before_action :find_author, only: [:show, :edit, :update, :destroy]
 
   def index

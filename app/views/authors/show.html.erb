@@ -1,0 +1,22 @@
+<p>
+  <strong>Name:</strong>
+  <%= @author.name %>
+</p>
+ 
+<p>
+  <strong>Bio:</strong>
+  <%= @author.bio.truncate(10) %>
+</p>
+<p>
+
+<p>
+  <strong>Born:</strong>
+  <%= @author.born %>
+</p>
+
+  <strong>Died:</strong>
+  <%= @author.died %>
+</p>
+
+<%= link_to 'Edit', edit_author_path(@author) %> |
+<%= link_to 'Back', authors_path %>
